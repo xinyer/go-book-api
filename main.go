@@ -58,7 +58,6 @@ func createBook(w http.ResponseWriter, r *http.Request) {
 // Update Book
 func updateBook(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	w.Header().Set("Content-Type", "application/json")
 	params := mux.Vars(r)
 	for index, item := range books {
 		if item.ID == params["id"] {
